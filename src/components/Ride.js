@@ -6,7 +6,7 @@ const Ride = ({ rideData }) => {
     date,
     id,
     map_url,
-    origin_status_code,
+    origin_station_code,
     station_path,
     state,
     distance,
@@ -26,7 +26,7 @@ const Ride = ({ rideData }) => {
         </p>
         <p className="text-[#cfcfcf] text-lg pb-3">
           Origin Station :{" "}
-          <span className="text-white">{origin_status_code}</span>
+          <span className="text-white">{origin_station_code}</span>
         </p>
         <p className="text-[#cfcfcf] text-lg pb-3">
           station_path :{" "}

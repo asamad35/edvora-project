@@ -66,7 +66,7 @@ function App() {
       distance: 3,
       id: 354,
       map_url: "https://picsum.photos/200",
-      origin_status_code: "6",
+      origin_station_code: "6",
       state: "Himachal Pradesh",
       station_path: [20, 33, 47, 51, 61, 75, 89],
     });
