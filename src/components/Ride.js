@@ -11,7 +11,7 @@ const Ride = ({ rideData }) => {
     state,
     distance,
   } = rideData;
-
+  console.log(rideData);
   return (
     <div className="bg-[#171717] mx-14 flex items-center rounded-xl m-auto p-6 py-10 mb-4">
       <img
