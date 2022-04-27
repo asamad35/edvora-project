@@ -85,7 +85,7 @@ const Body = ({
       <div
         className={`flex-col ${
           filter ? "block" : "hidden"
-        } absolute right-[2rem] top-40 bg-black p-8 rounded-xl w-[300px]`}
+        } absolute right-[2rem] top-20 bg-black p-8 rounded-xl w-[300px]`}
       >
         <span className="border-b-2 text-2xl mb-4 pb-2 w-full block text-[#a5a5a5]">
           Filters

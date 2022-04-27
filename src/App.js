@@ -16,6 +16,7 @@ function App() {
 
   useEffect(() => {
     getDataFromAPI();
+    document.body.style.zoom = "80%";
   }, []);
 
   useEffect(() => {
