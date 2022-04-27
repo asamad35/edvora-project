@@ -132,12 +132,22 @@ function App() {
     else if (type === "future") setRideData(futureRideData);
   }
 
-  function filterState(state) {
-    const filteredData = allRideData.filter((ride) => ride.state === state);
+  function filterState(state, tabNum) {
+    let searchArr;
+    if (tabNum === "0") searchArr = allRideData;
+    else if (tabNum === "1") searchArr = futureRideData;
+    else if (tabNum === "2") searchArr = pastRideData;
+
+    const filteredData = searchArr.filter((ride) => ride.state === state);
     setRideData(filteredData);
     setCitiesData(filteredData);
   }
-  function filterCity(city) {
+  function filterCity(city, tabNum) {
+    let searchArr;
+    if (tabNum === "0") searchArr = allRideData;
+    else if (tabNum === "1") searchArr = futureRideData;
+    else if (tabNum === "2") searchArr = pastRideData;
+
     const filteredData = allRideData.filter((ride) => ride.city === city);
     setRideData(filteredData);
   }

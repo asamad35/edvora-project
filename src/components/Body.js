@@ -93,7 +93,7 @@ const Body = ({
         {/* state */}
         <select
           onChange={(e) => {
-            filterState(e.target.value);
+            filterState(e.target.value, tabNum);
           }}
           className={"w-full text-white p-2 rounded-xl bg-[#171717] mb-4"}
           name="state"
@@ -109,7 +109,7 @@ const Body = ({
         {/* City */}
         <select
           onChange={(e) => {
-            filterCity(e.target.value);
+            filterCity(e.target.value, tabNum);
           }}
           className="w-full text-white p-2 rounded-xl bg-[#171717]"
           name="state"
